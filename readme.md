@@ -11,8 +11,21 @@
 * install WAMP Server or XAMP for mysql
 * install Postman for check API local
 * Table will auto generate based on model bacause used db.sequelize.sync() but must create evermos database
-* API for check http://localhost:8081/api/cart
-* payload from body 
+* API for add product http://localhost:8081/api/product
+```bash
+payload from body
+{
+    "category_id": 1,
+    "discount_id" : 1,
+    "name": "Book javascript",
+    "description": "Book create api with javascript",
+    "price": 30000,
+    "stock" : 10
+}
+```
+* API for check stock product http://localhost:8081/api/cart
+```bash
+payload from body 
 [
     {
         "user_id":1,
@@ -25,4 +38,5 @@
         "quantity": 2
     }
 ]
+```
 * run server on local machine : npm start
